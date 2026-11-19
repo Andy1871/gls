@@ -47,7 +47,7 @@ export default function InstagramSection({
         {/* Text panel */}
         <div className="flex flex-col items-start lg:pb-4">
           <SectionHeader size="sm" className="">
-            Follow Along on Instagram
+            Follow along on Instagram
           </SectionHeader>
           <p className="mt-3 text-sm leading-relaxed text-gray-600">
             Classes, tips and studio life, shared every week.
@@ -59,7 +59,7 @@ export default function InstagramSection({
             className="mt-6 text-sm"
           >
             <FaInstagram className="h-4 w-4" />
-            Follow Me
+            Follow me
           </Button>
         </div>
       </div>

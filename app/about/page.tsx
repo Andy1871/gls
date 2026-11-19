@@ -26,20 +26,13 @@ export default function AboutPage() {
 
             <div className="mt-8 space-y-5 leading-relaxed md:text-lg">
               <p>
-                [Two or three sentences on who you are and how you came to
-                Pilates and training. Keep it warm and personal. A second short
-                paragraph on how you work with clients: what a session with you
-                feels like and who it’s for. A second short paragraph on how you
-                work with clients: what a session with you feels like and who
-                it’s for.]
+                For years I struggled to find a routine I loved. I tried gyms, home workouts and running, always chasing quick results without knowing what worked for me.
               </p>
+              <p>Then I discovered Reformer Pilates and everything clicked. I trained as an instructor alongside my corporate IT and sales career, then took the plunge, left my 9 to 5 and built Green Life Studio in my garden. Along the way I rediscovered my love of strength training and qualified as a Level 3 Personal Trainer.</p>
+
+              <p>I’ve had my own struggles with food too, from restriction and bingeing to feeling I had to follow strict rules. Now I enjoy simple, nourishing food without constant tracking, and that balance shapes everything I teach.</p>
               <p>
-                [A second short paragraph on how you work with clients: what a
-                session with you feels like and who it’s for. A second short
-                paragraph on how you work with clients: what a session with you
-                feels like and who it’s for. A second short paragraph on how you
-                work with clients: what a session with you feels like and who
-                it’s for.]
+                At Green Life Studio, I bring together Pilates, strength and nutrition to help you find what works for you and build habits that last. No quick fixes, no perfection, just a stronger, healthier and more balanced you.
               </p>
             </div>
 
@@ -48,7 +41,7 @@ export default function AboutPage() {
                 Explore Pilates
               </Button>
               <Button href="/personaltraining" className="text-base">
-                Explore Online Coaching
+                Explore online coaching
               </Button>
             </div>
           </div>
@@ -56,7 +49,7 @@ export default function AboutPage() {
         <div className="relative h-[70svh] md:h-auto">
           <Image
             src="/about/meet-tasha.jpeg"
-            alt="[Your name] in the studio"
+            alt="Tasha in the studio"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"
@@ -66,7 +59,7 @@ export default function AboutPage() {
 
       {/* Fun Facts */}
       {/* Same side padding as the Meet Tasha text, so it lines up */}
-      <section className="bg-sage-dark px-6 py-14 md:px-12 md:py-16 lg:px-20">
+      <section className="bg-sage-dark px-6 py-16 md:px-12 md:py-24 lg:px-20">
         <FunFactsStrip facts={funFacts} />
       </section>
 

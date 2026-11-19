@@ -44,7 +44,7 @@ const Navbar = () => {
           <Link href="/" className="justify-self-center">
             <Image
               src="/gls-logo-nav.svg"
-              alt="Logo"
+              alt="Green Life Studio"
               width={120}
               height={40}
               priority

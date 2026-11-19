@@ -39,7 +39,7 @@ export default function CrossSell({
           <h3 className="max-w-2xl font-heading text-3xl leading-tight text-sage-dark md:text-4xl">
             {children}
           </h3>
-          <Button href={href} className="mt-8 text-base">
+          <Button href={href} className="mt-8 text-base hover:bg-beige">
             {cta}
           </Button>
         </div>

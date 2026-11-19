@@ -19,55 +19,53 @@ const services = [
     title: "Personal Training",
     image: "/header-ps.jpg",
     alt: "Personal training session",
-    intro: "[Strength training built around you, not a template.]",
     points: [
-      "[A personalised programme for home or the gym]",
-      "[Weekly check-ins and form feedback by video]",
-      "[Progress tracked and adjusted as you go]",
+      "Feel strong, capable and proud of what your body can do",
+      "Lift heavier, move freely and feel more confident every week",
+      "Train at home or in the gym, with a plan made just for you",
     ],
   },
   {
-    title: "Nutrition",
+    title: "Nutrition Support",
     image: "/homepage/nutrition.jpeg",
     alt: "Healthy, balanced food",
-    intro: "[Food that fuels you, never restricts you.]",
     points: [
-      "[No strict diets or calorie obsession]",
-      "[Simple meal ideas that fit your week]",
-      "[Habits that support your energy, sleep and hormones]",
+      "Food that fuels you, never restricts you",
+      "More energy, better sleep and food you actually enjoy",
+      "Simple habits that fit your real life",
     ],
   },
 ];
 
-// What's included in the 12 week package. Placeholder copy: swap for your own
+// What's included in the 12-week package. Placeholder copy: swap for your own
 const included = [
   {
     title: "A plan built for you",
-    body: "[A training programme designed around your goals, schedule and experience, for home or the gym.]",
+    body: "A training programme designed around your goals, schedule and experience, for home or the gym.",
   },
   {
-    title: "Coaching app & demo videos",
-    body: "[Every session in one app, with demo videos so you know exactly how to move.]",
+    title: "Everything in one app",
+    body: "Your sessions, demo videos and progress, all on your phone.",
   },
   {
     title: "Nutrition guidance that fits your life",
-    body: "[Simple, flexible guidance with no strict diets, built around the food you enjoy.]",
+    body: "Simple, flexible guidance with no strict diets, built around the food you enjoy.",
   },
   {
-    title: "Weekly check-ins",
-    body: "[A weekly check-in to review how you're feeling, answer questions and keep you on track.]",
+    title: "Support every week",
+    body: "A weekly check-in to talk through how you’re feeling, ask questions and stay motivated.",
   },
   {
     title: "Habit coaching",
-    body: "[Small, sustainable habits around sleep, stress and energy that add up over time.]",
+    body: "Small, sustainable habits around sleep, stress and energy that add up over time.",
   },
   {
     title: "Progress reviews",
-    body: "[Regular reviews of your progress, with your plan adjusted as you get stronger.]",
+    body: "We’ll track your strength and milestones, then adjust your plan as you improve.",
   },
   {
     title: "Alongside Pilates",
-    body: "[Pair your coaching with studio Pilates sessions for an all-round approach.]",
+    body: "Pair your coaching with studio Pilates sessions for an all-round approach.",
   },
 ];
 
@@ -81,17 +79,16 @@ export default function PersonalTrainingPage() {
 
           <div className="relative max-w-xl">
             <h1 className="font-heading text-5xl leading-[1.05] md:text-6xl lg:text-7xl">
-              Personal training &amp; nutrition,{" "}
-              <span>wherever you are.</span>
+              Get stronger, <span>wherever you are.</span>
             </h1>
             <div className="mt-10 h-px w-16 bg-sage-dark/40" />
             <p className="mt-6 max-w-md leading-relaxed text-foreground/75 md:text-lg">
-              [Start with a 12 week block of coaching built around you, then
-              keep building with 4, 8 or 12 week blocks beyond. Strength,
-              nutrition and confidence, delivered online.]
+              Start with a 12-week block of coaching built around you, then keep
+              building with 4, 8 or 12-week blocks beyond. Strength, nutrition
+              and confidence, delivered online.
             </p>
             <Button href="#whats-included" className="mt-10 text-base">
-              What&rsquo;s Included
+              What&rsquo;s included
             </Button>
           </div>
         </div>
@@ -143,13 +140,10 @@ export default function PersonalTrainingPage() {
                 <h3 className="font-heading text-4xl text-beige lg:text-5xl">
                   {s.title}
                 </h3>
-                <p className="mt-5 font-heading text-xl leading-snug text-beige/80 md:text-2xl">
-                  {s.intro}
-                </p>
                 {/* Each point as a short plain paragraph */}
                 <ul className="mt-6 space-y-3">
                   {s.points.map((point, j) => (
-                    <li key={j} className="leading-relaxed text-beige/75">
+                    <li key={j} className="mt-3 text-lg leading-snug text-beige/80 md:text-lg">
                       {point}
                     </li>
                   ))}
@@ -160,14 +154,14 @@ export default function PersonalTrainingPage() {
         </div>
       </section>
 
-      {/* Packages: centred heading, then what's included in the 12 week package */}
+      {/* Packages: centred heading, then what's included in the 12-week package */}
       {/* scroll-mt keeps the heading clear of the fixed nav when jumped to from the hero */}
       <section
         id="whats-included"
         className="scroll-mt-18 px-6 py-20 md:px-12 md:py-28 lg:px-20"
       >
         <SectionHeader className="mx-auto max-w-3xl text-center text-sage-dark">
-          What&rsquo;s included in your 12 week package and beyond?
+          What&rsquo;s included in your 12-week package and beyond?
         </SectionHeader>
 
         <div className="mx-auto max-w-5xl">
@@ -205,7 +199,7 @@ export default function PersonalTrainingPage() {
                 What happens next?
               </h4>
               <p className="relative mt-3 leading-relaxed text-beige/80">
-                Continue your progress with 4, 8 or 12 week blocks.
+                Continue your progress with 4, 8 or 12-week blocks.
               </p>
             </li>
           </ol>
@@ -213,7 +207,7 @@ export default function PersonalTrainingPage() {
           {/* Centred under the cards */}
           <div className="mt-12 flex justify-center">
             <Button href="/contact" className="text-base">
-              Enquire Now
+              Enquire now
             </Button>
           </div>
         </div>

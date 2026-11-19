@@ -50,8 +50,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-md text-base leading-relaxed text-stone-600 md:text-lg">
-            Pilates, personal training and nutrition for women of every level,
-            at a pace that feels good.
+            Pilates, personal training and nutrition for women in Surrey and online.
           </p>
 
           <div className="mt-10 hidden flex-wrap items-center gap-x-8 gap-y-4 md:flex">

@@ -5,7 +5,7 @@ const keywords = [
   "Strength",
   "Balance",
   "Community",
-  "Well-Being",
+  "Wellbeing",
   "Reformer",
   "1-2-1",
   "Wellness",

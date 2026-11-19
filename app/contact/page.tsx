@@ -30,13 +30,20 @@ export default function ContactPage() {
               Let&rsquo;s start your{" "}
               <span className="text-sage-dark">journey</span>
             </h1>
-            <p className="mt-6 leading-relaxed text-foreground/70 md:text-lg">
-              [Pilates, personal training or nutrition: send me a message and
-              I&rsquo;ll get back to you within a couple of days.]
+            <p className="mt-8 leading-relaxed text-foreground/70 md:text-lg">
+              Interested in private Pilates, online coaching or a workplace
+              session? Or just have a question? Send me a message and I&rsquo;ll
+              get back to you within a couple of days.
             </p>
             <p className="mt-2 leading-relaxed text-foreground/70 md:text-lg">
-              Please book online here (link) if you would like to join one of my
-              two weekly group mat classes.
+              Want to join a group mat class?{" "}
+              <a
+                href="/book"
+                className="underline underline-offset-4 hover:text-foreground"
+              >
+                Book your spot online
+              </a>
+              .
             </p>
 
             <EnquiryForm className="mt-8 flex flex-col" />

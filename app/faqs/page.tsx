@@ -40,7 +40,7 @@ export default function FaqsPage() {
                       +
                     </span>
                   </summary>
-                  <p className="pb-6 pr-10 leading-relaxed">{faq.answer}</p>
+                  <p className="pb-6 pr-10 leading-relaxed whitespace-pre-line">{faq.answer}</p>
                 </details>
               ))}
             </div>

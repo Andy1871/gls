@@ -65,7 +65,7 @@ export default function Footer() {
               className="mt-6 text-sm hover:bg-sage hover:text-sage-dark"
             >
               <FaInstagram className="h-4 w-4" />
-              Follow Me
+              Follow me
             </Button>
           </div>
 
@@ -100,7 +100,7 @@ export default function Footer() {
             <Link href="/">
               <Image
                 src="/gls-logo-footer.svg"
-                alt="Greenlife Studio"
+                alt="Green Life Studio"
                 width={280}
                 height={100}
               />
@@ -157,7 +157,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="relative border-t border-beige/15">
         <p className="mx-auto max-w-7xl px-6 py-6 text-xs text-beige/60 md:px-8 lg:px-12">
-          ©2026 Greenlife Studio. All rights reserved.
+          ©2026 Green Life Studio. All rights reserved.
         </p>
       </div>
     </footer>

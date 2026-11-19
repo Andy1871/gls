@@ -17,21 +17,21 @@ const offerings = [
   {
     title: "Private 1-2-1",
     description:
-      "[Short description of private sessions: tailored to you, your goals and your pace.]",
+      "Private sessions on the reformer, tailored completely to you. Ideal if you’re new to Pilates, working around an injury or want focused attention on your technique and goals.",
     image: "/homepage/pilates.jpeg",
     href: "/contact", // swap for your booking link
   },
   {
-    title: "Group Classes",
+    title: "Group Mat Classes",
     description:
-      "[Short description of group classes: class sizes, levels, where and when.]",
+      "Friendly, supportive classes in Camberley, twice a week, to build strength and mobility. Every exercise comes with options, so you can always work at the level that’s right for you.",
     image: "/about/teaching.jpeg",
     href: "/contact", // swap for your booking link
   },
   {
     title: "Business & Events",
     description:
-      "[Short description of corporate wellness, workplace sessions, retreats and private events.]",
+      "Mat Pilates brought to you. Whether it’s a company wellness day, a retreat, a birthday or a hen do. They’re a relaxed, inclusive way for everyone to unwind, move and recharge together, and no experience is needed.",
     image: "/header-ps.jpg",
     href: "/contact", // swap for your booking link
   },
@@ -66,13 +66,12 @@ export default function PilatesPage() {
 
           <div className="relative max-w-xl">
             <h1 className="font-heading text-5xl leading-[1.05] md:text-6xl lg:text-7xl">
-              [Pilates Surrey Camberley,]{" "}
-              <span className="text-sage">[key words]</span>
+              Private and Group Pilates in Camberley, Surrey{" "}
             </h1>
             <div className="mt-10 h-px w-16 bg-sage/50" />
             <p className="mt-6 max-w-md leading-relaxed text-beige/80 md:text-lg">
-              [One or two sentences introducing your Pilates: the style you
-              teach, who it&rsquo;s for and how it&rsquo;ll make them feel.]
+              Pilates for women of every level, in a calm, welcoming space where
+              you can move at your own pace.
             </p>
           </div>
         </div>
@@ -83,16 +82,19 @@ export default function PilatesPage() {
         <div className="flex items-center bg-amber-50 px-6 py-20 md:px-12 lg:px-20">
           <div className="max-w-lg">
             <h2 className="font-heading text-4xl leading-[1.05] md:text-5xl lg:text-6xl">
-              [Why Pilates]
+              Why Pilates
             </h2>
             <div className="mt-8 space-y-5 leading-relaxed md:text-lg">
               <p>
-                [A short paragraph on the benefits of Pilates and why you love
-                teaching it: strength, posture, mobility, calm.]
+                Pilates strengthens your deep core muscles to support your
+                spine, improve your posture and keep your joints supple. It also
+                asks you to slow down and breathe, so you leave feeling lighter
+                in body and mind.
               </p>
               <p>
-                [A second short paragraph on what a session with you is like,
-                and that every level is welcome, from complete beginners up.]
+                On the reformer, every session is one-to-one and tailored to
+                your body and goals, while my group mat classes are a friendly,
+                relaxed way to practise alongside others.
               </p>
             </div>
           </div>
@@ -120,7 +122,7 @@ export default function PilatesPage() {
 
         <div className="m-6 mt-12 grid gap-12 md:grid-cols-3 md:gap-6">
           {offerings.map((o) => (
-            <OfferingBox key={o.title} {...o} cta="Book Here" />
+            <OfferingBox key={o.title} {...o} cta="Book here" />
           ))}
         </div>
 
@@ -131,9 +133,8 @@ export default function PilatesPage() {
           alt="Personal training session"
           href="/personaltraining"
         >
-          Interested in <span>personal training</span>,{" "}
-          <span>nutrition</span> &amp;{" "}
-          <span>online coaching</span>?
+          Interested in <span>personal training</span>, <span>nutrition</span>{" "}
+          &amp; <span>online coaching</span>?
         </CrossSell>
       </section>
     </>

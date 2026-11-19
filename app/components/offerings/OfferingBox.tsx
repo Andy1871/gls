@@ -61,7 +61,7 @@ export default function OfferingBox({
               <Button
                 href={bookHref}
                 variant="white"
-                className="border border-sage-dark"
+                className="border border-sage-dark hover:bg-sage hover:text-sage-dark"
               >
                 Book a session
               </Button>

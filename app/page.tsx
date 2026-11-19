@@ -15,16 +15,15 @@ export default function Home() {
           <div>
             <SectionHeader>Why choose </SectionHeader>
             <SectionHeader className="text-sage-dark">
-              Greenlife Studio
+              Green Life Studio
             </SectionHeader>
           </div>
 
           <div>
             <p className="leading-relaxed md:mt-16">
-              At Greenlife Studio, I help women build strength, confidence and a
-              healthier relationship with their bodies through{" "}
+              I help women feel stronger, more confident and more at home in their bodies through{" "}
               <strong className="font-heading text-4xl leading-[1.1] md:text-4xl lg:text-4xl text-sage-dark">
-                pilates
+                Pilates
               </strong>
               ,{" "}
               <strong className="font-heading text-4xl leading-[1.1] md:text-4xl lg:text-4xl  text-sage-dark">
@@ -34,8 +33,7 @@ export default function Home() {
               <strong className="font-heading text-4xl leading-[1.1] md:text-4xl lg:text-4xl  text-sage-dark">
                 nutrition support
               </strong>
-              . Whether you’re stepping onto a mat for the first time or
-              returning after a break, you’ll find a calm, welcoming space
+              . Whether you’re brand new or returning after a break, you’ll find a calm, welcoming space to move at your own pace.
             </p>
           </div>
         </div>
@@ -45,14 +43,14 @@ export default function Home() {
       <div className="m-6 grid gap-12 md:grid-cols-2 md:gap-6">
         <OfferingBox
           title="Pilates"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
+          description="Strengthen your core, improve your posture and move with more control. I adapt every session to suit your body, whether you’re brand new or have been doing Pilates for years."
           image="/homepage/pilates.jpeg"
           href="/pilates"
           bookHref="/contact"
         />
         <OfferingBox
           title="Personal Training & Nutrition"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim."
+          description="Focused, personal support built around your goals, whether that’s getting stronger, feeling fitter or building confidence with weights. I’ll support you every step of the way. PT & nutrition support is currently online only, whilst my personal gym space is being built."
           image="/header-ps.jpg"
           href="/personaltraining"
           bookHref="/contact"
@@ -60,7 +58,7 @@ export default function Home() {
       </div>
       {/* 
       <div className="mx-auto mt-20 w-3/4 text-center">
-        <SectionHeader>Tasha's Greenlife Studio Story</SectionHeader>
+        <SectionHeader>Tasha's Green Life Studio Story</SectionHeader>
         <p className="mt-4 text-lg leading-relaxed md:text-lg md:leading-relaxed">
           Do you want any kind of about section on here with a picture of you?
           There would still be an actual about page with your journey, your

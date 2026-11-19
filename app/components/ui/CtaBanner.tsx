@@ -29,7 +29,7 @@ export default function CtaBanner({
         <p className="mt-5 max-w-xl leading-relaxed lg:max-w-3xl text-sage-dark/80 md:text-lg">
           {text}
         </p>
-        <Button href={href} className="mt-10 text-base md:text-lg lg:mt-8">
+        <Button href={href} className="mt-10 text-base md:text-lg lg:mt-8 hover:bg-beige">
           {cta}
         </Button>
       </div>

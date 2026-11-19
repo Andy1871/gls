@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ComponentProps } from "react";
+import { cn } from "@/app/lib/cn";
 
 const base =
   "inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-medium transition-colors";
@@ -25,7 +26,7 @@ export default function Button({
   className,
   ...props
 }: ButtonProps | LinkProps) {
-  const classes = `${base} ${variants[variant]} ${className ?? ""}`;
+  const classes = cn(base, variants[variant], className);
 
   if (props.href !== undefined) {
     return <Link {...props} className={classes} />;

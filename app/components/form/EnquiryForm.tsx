@@ -47,7 +47,12 @@ export default function EnquiryForm({
       const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({ "form-name": "enquiry", ...data }).toString(),
+        body: new URLSearchParams({
+          "form-name": "enquiry",
+          // Netlify uses a field called "subject" as the notification email's subject line
+          subject: `GLS Form Submission - ${data.name} ${data.surname}, ${data.enquiryType}`,
+          ...data,
+        }).toString(),
       });
       if (!res.ok) throw new Error(`Form submission failed: ${res.status}`);
       setStatus("sent");
@@ -194,7 +199,7 @@ export default function EnquiryForm({
         <Button type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send message"}
         </Button>
-        <p aria-live="polite" className="text-right text-sm">
+        <p aria-live="polite" className="self-stretch text-left text-sm">
           {status === "sent" &&
             "Thank you, your message has been sent. I’ll be in touch within a couple of days."}
           {status === "error" && (

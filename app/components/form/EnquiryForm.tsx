@@ -49,8 +49,12 @@ export default function EnquiryForm({
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
           "form-name": "enquiry",
-          // Netlify uses a field called "subject" as the notification email's subject line
-          subject: `GLS Form Submission - ${data.name} ${data.surname}, ${data.enquiryType}`,
+          // Netlify uses a field called "subject" as the notification email's subject line.
+          // It escapes "&" to "&amp;" there, so write "and" instead
+          subject: `GLS Form Submission - ${data.name} ${data.surname}, ${data.enquiryType}`.replaceAll(
+            "&",
+            "and",
+          ),
           ...data,
         }).toString(),
       });

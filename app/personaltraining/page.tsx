@@ -8,17 +8,17 @@ import GreenTexture from "../components/ui/GreenTexture";
 import { cn } from "../lib/cn";
 
 export const metadata: Metadata = {
-  title: "Personal Training & Nutrition | Green Life Studio",
+  title: "Personal Training & Nutrition | Greenlife Studio",
   description:
-    "Online personal training and nutrition coaching for women, on its own or alongside Pilates.",
+    "Online Personal Training and Nutrition coaching for women, on its own or alongside Pilates.",
 };
 
 // Placeholder images and copy: swap for your own
 const services = [
   {
     title: "Personal Training",
-    image: "/header-ps.jpg",
-    alt: "Personal training session",
+    image: "/images/back-pushing-weights-1536.jpg",
+    alt: "Pushing weights",
     points: [
       "Feel strong, capable and proud of what your body can do",
       "Lift heavier, move freely and feel more confident every week",
@@ -27,8 +27,8 @@ const services = [
   },
   {
     title: "Nutrition Support",
-    image: "/homepage/nutrition.jpeg",
-    alt: "Healthy, balanced food",
+    image: "/images/front-tophalf-orangesatcam-2400.jpg",
+    alt: "Holding oranges",
     points: [
       "Food that fuels you, never restricts you",
       "More energy, better sleep and food you actually enjoy",
@@ -84,7 +84,7 @@ export default function PersonalTrainingPage() {
             <div className="mt-10 h-px w-16 bg-sage-dark/40" />
             <p className="mt-6 max-w-md leading-relaxed text-foreground/75 md:text-lg">
               Start with a 12-week block of coaching built around you, then keep
-              building with 4, 8 or 12-week blocks beyond. Strength, nutrition
+              building with 4, 8 or 12-week blocks beyond. Strength, Nutrition
               and confidence, delivered online.
             </p>
             <Button href="#whats-included" className="mt-10 text-base">
@@ -96,8 +96,9 @@ export default function PersonalTrainingPage() {
         {/* Comes first on phones, matching the Pilates page */}
         <div className="relative order-first h-[70svh] md:order-none md:h-full">
           <Image
-            src="/header-ps.jpg"
-            alt="Personal training"
+            quality={90}
+            src="/images/bicep-curl-bar-1536.jpg"
+            alt="Bicep curl with a bar"
             fill
             priority
             sizes="(min-width: 768px) 50vw, 100vw"
@@ -122,6 +123,7 @@ export default function PersonalTrainingPage() {
               )}
             >
               <Image
+                quality={90}
                 src={s.image}
                 alt={s.alt}
                 fill
@@ -215,8 +217,8 @@ export default function PersonalTrainingPage() {
 
       {/* Pilates cross-sell (same banner as on the Pilates page) */}
       <CrossSell
-        image="/homepage/pilates.jpeg"
-        alt="Pilates in the studio"
+        image="/images/front-laying-ball-1600.jpg"
+        alt="Pilates with a ball"
         href="/pilates"
       >
         Want to learn more about <span>Pilates</span>?

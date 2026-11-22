@@ -15,6 +15,7 @@ export default function TestimonialCard({
       <div className="relative flex size-20 items-center justify-center overflow-hidden rounded-full bg-sage">
         {image ? (
           <Image
+            quality={90}
             src={image}
             alt={name}
             fill

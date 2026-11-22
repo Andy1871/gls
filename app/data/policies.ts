@@ -42,7 +42,7 @@ export const policies: Policy[] = [
   {
     title: "Online coaching",
     body: [
-      "Online coaching starts with a 12-week block, including a personalised training programme, weekly check-ins via the app, WhatsApp or a video call, video feedback on your form and personalised nutrition support.",
+      "Online coaching starts with a 12-week block, including a personalised training programme, weekly check-ins via the app, WhatsApp or a video call, video feedback on your form and personalised Nutrition support.",
       "To get the most from your programme, please complete your weekly check-ins and let me know if anything changes with your health, schedule or equipment so I can adjust your plan.",
       "Nutrition support is general guidance on balanced eating and healthy habits. It isn’t medical advice and doesn’t replace advice from your GP or a registered dietitian, particularly if you have a medical condition.",
     ],

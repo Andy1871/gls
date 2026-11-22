@@ -13,6 +13,7 @@ export default function ContactForm({ title }: ContactFormProps) {
     <section className="relative w-full md:flex md:min-h-[75vh] md:items-center md:overflow-hidden">
       <div className="relative h-[45svh] w-full md:absolute md:inset-0 md:h-auto">
         <Image
+          quality={90}
           src="/studio-ls.jpg"
           alt=""
           fill
@@ -39,7 +40,7 @@ export default function ContactForm({ title }: ContactFormProps) {
 
           <div className="mb-8 space-y-3 leading-relaxed text-foreground/70 md:text-sm md:text-foreground">
             <p>
-              Get in touch to discuss your pilates and well-being journey, or if
+              Get in touch to discuss your Pilates and well-being journey, or if
               you have any other questions.
             </p>
             <p>

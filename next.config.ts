@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     remotePatterns: [{ protocol: "https", hostname: "placehold.co" }],
-    qualities: [75, 90]
+    qualities: [90], // every image is served at 90%, so uploaded WebPs keep their detail
   },
   experimental: {
     agentFeedback: true,

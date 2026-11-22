@@ -7,8 +7,8 @@ import { funFacts } from "../data/funFacts";
 import SoftTexture from "../components/ui/SoftTexture";
 
 export const metadata: Metadata = {
-  title: "About | Green Life Studio",
-  description: "Meet the person behind Green Life Studio.",
+  title: "About | Greenlife Studio",
+  description: "Meet the person behind Greenlife Studio.",
 };
 
 export default function AboutPage() {
@@ -28,11 +28,11 @@ export default function AboutPage() {
               <p>
                 For years I struggled to find a routine I loved. I tried gyms, home workouts and running, always chasing quick results without knowing what worked for me.
               </p>
-              <p>Then I discovered Reformer Pilates and everything clicked. I trained as an instructor alongside my corporate IT and sales career, then took the plunge, left my 9 to 5 and built Green Life Studio in my garden. Along the way I rediscovered my love of strength training and qualified as a Level 3 Personal Trainer.</p>
+              <p>Then I discovered Reformer Pilates and everything clicked. I trained as an instructor alongside my corporate IT and sales career, then took the plunge, left my 9 to 5 and built Greenlife Studio in my garden. Along the way I rediscovered my love of strength training and qualified as a Level 3 Personal Trainer.</p>
 
               <p>I’ve had my own struggles with food too, from restriction and bingeing to feeling I had to follow strict rules. Now I enjoy simple, nourishing food without constant tracking, and that balance shapes everything I teach.</p>
               <p>
-                At Green Life Studio, I bring together Pilates, strength and nutrition to help you find what works for you and build habits that last. No quick fixes, no perfection, just a stronger, healthier and more balanced you.
+                At Greenlife Studio, I bring together Pilates, strength and Nutrition to help you find what works for you and build habits that last. No quick fixes, no perfection, just a stronger, healthier and more balanced you.
               </p>
             </div>
 
@@ -48,7 +48,8 @@ export default function AboutPage() {
         </div>
         <div className="relative h-[70svh] md:h-auto">
           <Image
-            src="/about/meet-tasha.jpeg"
+            quality={90}
+            src="/images/front-sat-props-2400.jpg"
             alt="Tasha in the studio"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
@@ -68,7 +69,8 @@ export default function AboutPage() {
         {/* Left: one full-height image */}
         <div className="relative h-[70svh] md:h-full">
           <Image
-            src="/about/teaching.jpeg"
+            quality={90}
+            src="/images/reformer-plank-2400.jpg"
             alt=""
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
@@ -92,7 +94,8 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[50svh] md:h-full">
             <Image
-              src="/header-ps.jpg"
+              quality={90}
+              src="/images/legs-on-mat-2400.jpg"
               alt=""
               fill
               sizes="(min-width: 768px) 50vw, 100vw"

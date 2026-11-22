@@ -43,8 +43,9 @@ const Navbar = () => {
 
           <Link href="/" className="justify-self-center">
             <Image
+              quality={90}
               src="/gls-logo-nav.svg"
-              alt="Green Life Studio"
+              alt="Greenlife Studio"
               width={120}
               height={40}
               priority
@@ -63,8 +64,9 @@ const Navbar = () => {
         <div className="flex h-18 items-center justify-between px-6 lg:hidden">
           <Link href="/" aria-label="Home">
             <Image
+              quality={90}
               src="/gls-logo-nav.svg"
-              alt="Green Life Studio"
+              alt="Greenlife Studio"
               width={120}
               height={40}
               priority

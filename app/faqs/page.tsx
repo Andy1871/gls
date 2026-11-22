@@ -3,9 +3,9 @@ import Button from "../components/ui/Button";
 import { faqSections } from "../data/faqs";
 
 export const metadata: Metadata = {
-  title: "FAQs | Green Life Studio",
+  title: "FAQs | Greenlife Studio",
   description:
-    "Answers to common questions about Pilates, online coaching and Green Life Studio.",
+    "Answers to common questions about Pilates, online coaching and Greenlife Studio.",
 };
 
 export default function FaqsPage() {

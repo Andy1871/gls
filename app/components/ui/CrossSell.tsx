@@ -26,6 +26,7 @@ export default function CrossSell({
     <div className={cn("grid md:grid-cols-3", className)}>
       <div className="relative h-[40svh] md:h-auto md:min-h-80">
         <Image
+          quality={90}
           src={image}
           alt={alt}
           fill

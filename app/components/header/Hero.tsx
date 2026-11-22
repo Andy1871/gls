@@ -50,7 +50,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-md text-base leading-relaxed text-stone-600 md:text-lg">
-            Pilates, personal training and nutrition for women in Surrey and online.
+            Pilates, Personal Training and Nutrition for women in Surrey and online.
           </p>
 
           <div className="mt-10 hidden flex-wrap items-center gap-x-8 gap-y-4 md:flex">
@@ -74,8 +74,8 @@ export default function Hero() {
             {/* Arched portrait */}
             <div className="relative aspect-3/4 overflow-hidden rounded-t-full bg-stone-200 shadow-[0_30px_60px_-30px_rgba(60,40,20,0.35)]">
               <Image
-                src="/front-laying-pose-2400.webp"
-                alt="Woman doing mat pilates"
+                src="/images/front-laying-pose-1600.jpg"
+                alt="Woman doing mat Pilates"
                 fill
                 priority
                 sizes="(min-width: 1024px) 480px, (min-width: 768px) 45vw, 90vw"

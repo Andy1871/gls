@@ -15,7 +15,7 @@ export default function Home() {
           <div>
             <SectionHeader>Why choose </SectionHeader>
             <SectionHeader className="text-sage-dark">
-              Green Life Studio
+              Greenlife Studio
             </SectionHeader>
           </div>
 
@@ -27,11 +27,11 @@ export default function Home() {
               </strong>
               ,{" "}
               <strong className="font-heading text-4xl leading-[1.1] md:text-4xl lg:text-4xl  text-sage-dark">
-                personal training
+                Personal Training
               </strong>{" "}
               and{" "}
               <strong className="font-heading text-4xl leading-[1.1] md:text-4xl lg:text-4xl  text-sage-dark">
-                nutrition support
+                Nutrition support
               </strong>
               . Whether you’re brand new or returning after a break, you’ll find a calm, welcoming space to move at your own pace.
             </p>
@@ -44,21 +44,22 @@ export default function Home() {
         <OfferingBox
           title="Pilates"
           description="Strengthen your core, improve your posture and move with more control. I adapt every session to suit your body, whether you’re brand new or have been doing Pilates for years."
-          image="/homepage/pilates.jpeg"
+          image="/images/legs-rollup-mat-2400.jpg"
+          imagePosition="50% 80%"
           href="/pilates"
           bookHref="/contact"
         />
         <OfferingBox
           title="Personal Training & Nutrition"
-          description="Focused, personal support built around your goals, whether that’s getting stronger, feeling fitter or building confidence with weights. I’ll support you every step of the way. PT & nutrition support is currently online only, whilst my personal gym space is being built."
-          image="/header-ps.jpg"
+          description="Focused, personal support built around your goals, whether that’s getting stronger, feeling fitter or building confidence with weights. I’ll support you every step of the way. PT & Nutrition support is currently online only, whilst my personal gym space is being built."
+          image="/images/back-lunge-bar-1536.jpg"
           href="/personaltraining"
           bookHref="/contact"
         />
       </div>
       {/* 
       <div className="mx-auto mt-20 w-3/4 text-center">
-        <SectionHeader>Tasha's Green Life Studio Story</SectionHeader>
+        <SectionHeader>Tasha's Greenlife Studio Story</SectionHeader>
         <p className="mt-4 text-lg leading-relaxed md:text-lg md:leading-relaxed">
           Do you want any kind of about section on here with a picture of you?
           There would still be an actual about page with your journey, your

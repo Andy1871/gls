@@ -17,7 +17,7 @@ export const faqSections: FaqSection[] = [
       {
         question: "Where are you based?",
         answer:
-          "I teach Pilates in Camberley, Surrey. Personal training and nutrition coaching are delivered online, so you can work with me wherever you are.",
+          "I teach Pilates in Camberley, Surrey. Personal training and Nutrition coaching are delivered online, so you can work with me wherever you are.",
       },
       {
         question: "I’m a complete beginner. Is that OK?",
@@ -67,7 +67,7 @@ export const faqSections: FaqSection[] = [
       {
         question: "How does online coaching work?",
         answer:
-          "You start with a 12-week block built around your goals, your schedule and your starting point. You’ll get a personalised training programme for home or the gym, weekly check-ins, and video feedback on your form. I’ll track your progress and adjust your plan as you go. You’ll also receive personalised nutrition support, so your meals can match your goals.",
+          "You start with a 12-week block built around your goals, your schedule and your starting point. You’ll get a personalised training programme for home or the gym, weekly check-ins, and video feedback on your form. I’ll track your progress and adjust your plan as you go. You’ll also receive personalised Nutrition support, so your meals can match your goals.",
       },
       {
         question: "How do the check-ins work?",
@@ -80,7 +80,7 @@ export const faqSections: FaqSection[] = [
           "No. Your programme can be designed for home or the gym. If you train at home, I’ll build it around the equipment you have.",
       },
       {
-        question: "What’s included in the nutrition support?",
+        question: "What’s included in the Nutrition support?",
         answer:
           "Simple meal ideas that fit your week and realistic habits that support your energy, sleep and hormones. There are no strict diets or rigid rules, just a balanced approach to food that works with your life.",
       },

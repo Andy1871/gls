@@ -5,8 +5,8 @@ import OfferingBox from "../components/offerings/OfferingBox";
 import CrossSell from "../components/ui/CrossSell";
 
 export const metadata: Metadata = {
-  title: "Pilates | Green Life Studio",
-  description: "Private, group and corporate Pilates with Green Life Studio.",
+  title: "Pilates | Greenlife Studio",
+  description: "Private, group and corporate Pilates with Greenlife Studio.",
 };
 
 // Fine film-grain texture (same as the about page hero), so the green isn't flat
@@ -18,21 +18,21 @@ const offerings = [
     title: "Private 1-2-1",
     description:
       "Private sessions on the reformer, tailored completely to you. Ideal if you’re new to Pilates, working around an injury or want focused attention on your technique and goals.",
-    image: "/homepage/pilates.jpeg",
+    image: "/about/teaching.jpeg",
     href: "/contact", // swap for your booking link
   },
   {
     title: "Group Mat Classes",
     description:
       "Friendly, supportive classes in Camberley, twice a week, to build strength and mobility. Every exercise comes with options, so you can always work at the level that’s right for you.",
-    image: "/about/teaching.jpeg",
+    image: "/images/group-mat-1600.jpg",
     href: "/contact", // swap for your booking link
   },
   {
     title: "Business & Events",
     description:
       "Mat Pilates brought to you. Whether it’s a company wellness day, a retreat, a birthday or a hen do. They’re a relaxed, inclusive way for everyone to unwind, move and recharge together, and no experience is needed.",
-    image: "/header-ps.jpg",
+    image: "/images/group-wo-matcha-1600.jpg",
     href: "/contact", // swap for your booking link
   },
 ];
@@ -44,7 +44,8 @@ export default function PilatesPage() {
       <section className="grid pt-18 md:h-svh md:min-h-160 md:grid-cols-2">
         <div className="relative h-[70svh] md:h-full">
           <Image
-            src="/homepage/pilates.jpeg"
+            quality={90}
+            src="/images/front-torso-props-2400.jpg"
             alt="Pilates in the studio"
             fill
             priority
@@ -103,8 +104,9 @@ export default function PilatesPage() {
         {/* Comes first on phones so the page alternates image / text */}
         <div className="relative order-first h-[70svh] md:order-none md:h-auto">
           <Image
-            src="/about/teaching.jpeg"
-            alt="Teaching a Pilates session"
+            quality={90}
+            src="/images/birdseye-mat-props-2400.jpg"
+            alt="Pilates mat and props from above"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"
@@ -122,18 +124,20 @@ export default function PilatesPage() {
 
         <div className="m-6 mt-12 grid gap-12 md:grid-cols-3 md:gap-6">
           {offerings.map((o) => (
-            <OfferingBox key={o.title} {...o} cta="Book here" />
+            <OfferingBox key={o.title} {...o} cta="Book here"
+              sizes="(min-width: 768px) 33vw, 100vw"
+            />
           ))}
         </div>
 
         {/* PT & nutrition cross-sell */}
         <CrossSell
           className="mt-16 md:mt-20"
-          image="/header-ps.jpg"
-          alt="Personal training session"
+          image="/images/picking-up-weight-1536.jpg"
+          alt="Picking up a weight"
           href="/personaltraining"
         >
-          Interested in <span>personal training</span>, <span>nutrition</span>{" "}
+          Interested in <span>Personal Training</span>, <span>Nutrition</span>{" "}
           &amp; <span>online coaching</span>?
         </CrossSell>
       </section>

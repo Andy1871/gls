@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import Button from "../ui/Button";
 import SectionHeader from "../ui/SectionHeader";
 
@@ -8,10 +8,10 @@ const instagramUrl = "https://instagram.com/yourhandle";
 
 // Placeholder images: swap for real Instagram posts
 const posts = [
-  { image: "/homepage/pilates.jpeg", alt: "Mat Pilates class" },
+  { image: "/images/side-sat-mat-1600.jpg", alt: "Mat Pilates class" },
   { image: "/about/teaching.jpeg", alt: "Teaching a session" },
   { image: "/header-ps.jpg", alt: "Studio session" },
-  { image: "/homepage/nutrition.jpeg", alt: "Healthy food" },
+  { image: "/images/front-tophalf-oranges-1600.jpg", alt: "Holding oranges" },
 ];
 
 const links = [
@@ -22,12 +22,6 @@ const links = [
   { href: "/faqs", label: "FAQs" },
   { href: "/policies", label: "Studio Policies" },
   { href: "/contact", label: "Contact" },
-];
-
-const socials = [
-  { href: instagramUrl, label: "Instagram", icon: FaInstagram },
-  { href: "https://facebook.com/", label: "Facebook", icon: FaFacebookF },
-  { href: "https://tiktok.com/", label: "TikTok", icon: FaTiktok },
 ];
 
 // Fine film-grain texture, as on the page heroes
@@ -79,6 +73,7 @@ export default function Footer() {
                 className="group relative aspect-3/4 overflow-hidden"
               >
                 <Image
+                  quality={90}
                   src={post.image}
                   alt={post.alt}
                   fill
@@ -95,34 +90,21 @@ export default function Footer() {
 
         {/* Main footer */}
         <div className="grid gap-8 border-t border-beige/15 py-10 md:grid-cols-3">
-          {/* Logo, description, socials (socials sit under the logo, aligned to its right edge) */}
+          {/* Logo */}
           <div className="flex w-fit flex-col">
             <Link href="/">
               <Image
+                quality={90}
                 src="/gls-logo-footer.svg"
-                alt="Green Life Studio"
+                alt="Greenlife Studio"
                 width={280}
                 height={100}
               />
             </Link>
             {/* <p className="mt-6 max-w-xs text-sm leading-relaxed text-beige/75">
-              Pilates, personal training and nutrition for women of every level,
+              Pilates, Personal Training and Nutrition for women of every level,
               in a calm and welcoming space.
             </p> */}
-            <div className="mt-6 flex justify-end gap-4">
-              {socials.map(({ href, label, icon: Icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-beige/30 transition-colors hover:bg-beige hover:text-sage-dark"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Site links, split over two columns (4 + 3) to keep the footer short */}
@@ -157,7 +139,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="relative border-t border-beige/15">
         <p className="mx-auto max-w-7xl px-6 py-6 text-xs text-beige/60 md:px-8 lg:px-12">
-          ©2026 Green Life Studio. All rights reserved.
+          ©2026 Greenlife Studio. All rights reserved.
         </p>
       </div>
     </footer>

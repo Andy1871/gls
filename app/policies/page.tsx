@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { policies } from "../data/policies";
 
 export const metadata: Metadata = {
-  title: "Studio Policies | Green Life Studio",
+  title: "Studio Policies | Greenlife Studio",
   description:
-    "Booking, cancellation, payment and studio policies for Green Life Studio.",
+    "Booking, cancellation, payment and studio policies for Greenlife Studio.",
 };
 
 export default function PoliciesPage() {

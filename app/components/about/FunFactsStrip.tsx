@@ -22,6 +22,7 @@ export default function FunFactsStrip({ facts }: { facts: FunFact[] }) {
             <div className="relative size-20 shrink-0 overflow-hidden rounded-full bg-beige/10 ring-1 ring-beige/20 transition-colors group-hover:ring-beige/40">
               {fact.image ? (
                 <Image
+                  quality={90}
                   src={fact.image}
                   alt=""
                   fill

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { cn } from "@/app/lib/cn";
 import GreenTexture from "../ui/GreenTexture";
 import { isActivePath } from "./NavLink";
@@ -20,8 +20,6 @@ const mainLinks = [
 // Placeholders: same as the footer
 const socials = [
   { href: "https://instagram.com/yourhandle", label: "Instagram", icon: FaInstagram },
-  { href: "https://facebook.com/", label: "Facebook", icon: FaFacebookF },
-  { href: "https://tiktok.com/", label: "TikTok", icon: FaTiktok },
 ];
 
 export default function MobileMenu({
@@ -63,8 +61,9 @@ export default function MobileMenu({
       <div className="relative flex h-18 shrink-0 items-center justify-between px-6">
         <Link href="/" onClick={onClose} aria-label="Home">
           <Image
+            quality={90}
             src="/gls-logo-footer.svg"
-            alt="Green Life Studio"
+            alt="Greenlife Studio"
             width={120}
             height={40}
             className="h-14 w-auto"

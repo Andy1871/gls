@@ -12,7 +12,7 @@ type Props = {
 // Full-width sage call-to-action band, used at the end of the homepage to send visitors to the contact page
 export default function CtaBanner({
   title = "Ready to start? Book your first session",
-  text = "Whether it's pilates, personal training or nutrition support, get in touch and we'll find what's right for you.",
+  text = "Whether it's Pilates, Personal Training or Nutrition support, get in touch and we'll find what's right for you.",
   href = "/contact",
   cta = "Get in touch",
   className,

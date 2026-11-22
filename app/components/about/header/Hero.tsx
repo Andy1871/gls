@@ -6,6 +6,7 @@ export default function Hero() {
     <section className="grid pt-18 md:h-svh md:min-h-160 md:grid-cols-2">
       <div className="relative h-[70svh] md:h-full">
         <Image
+          quality={90}
           src="/about/meet-tasha.jpeg"
           alt="Tasha in the studio"
           fill

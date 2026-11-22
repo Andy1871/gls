@@ -21,8 +21,8 @@ const shipporiMincho = Shippori_Mincho({
 });
 
 export const metadata: Metadata = {
-  title: "Green Life Studio",
-  description: "Green Life Studio - Pilates, PT & Nutrition.",
+  title: "Greenlife Studio",
+  description: "Greenlife Studio - Pilates, PT & Nutrition.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -11,6 +11,12 @@ type Props = {
   cta?: string;
   // Optional second button that goes to a booking form (e.g. "#book" on the homepage)
   bookHref?: string;
+  // How wide the image shows on screen, so the browser loads the right size.
+  // Default matches the homepage (2 columns from tablet up)
+  sizes?: string;
+  // Which part of the photo to keep when it is cropped, e.g. "50% 80%" keeps
+  // more of the bottom (crops mostly from the top). Default is the centre.
+  imagePosition?: string;
 };
 
 export default function OfferingBox({
@@ -20,14 +26,18 @@ export default function OfferingBox({
   href,
   cta = "Learn more",
   bookHref,
+  sizes = "(min-width: 768px) 50vw, 100vw",
+  imagePosition,
 }: Props) {
   const imageBox = (
     <div className="relative h-[60svh] overflow-hidden border-2 border-sage">
       <Image
+        quality={90}
         src={image}
         alt=""
         fill
-        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+        sizes={sizes}
+        style={imagePosition ? { objectPosition: imagePosition } : undefined}
         className="object-cover transition-transform duration-500 group-hover:scale-105"
       />
     </div>

@@ -7,7 +7,7 @@ import { cn } from "@/app/lib/cn";
 const instagramUrl = "https://instagram.com/yourhandle";
 
 const posts = [
-  { image: "/header-ps.jpg", alt: "Mat pilates class" },
+  { image: "/header-ps.jpg", alt: "Mat Pilates class" },
   { image: "/header-ps.jpg", alt: "Studio session" },
   { image: "/header-ps.jpg", alt: "Stretching outdoors" },
 ];
@@ -31,6 +31,7 @@ export default function InstagramSection({
               className="group relative aspect-4/5 overflow-hidden"
             >
               <Image
+                quality={90}
                 src={post.image}
                 alt={post.alt}
                 fill

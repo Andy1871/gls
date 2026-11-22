@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { cn } from "@/app/lib/cn";
 import GreenTexture from "../ui/GreenTexture";
 import { isActivePath } from "./NavLink";
+import { INSTAGRAM_URL } from "@/app/lib/instagram-profile";
 
 const mainLinks = [
   { href: "/", label: "Home" },
@@ -17,9 +18,8 @@ const mainLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-// Placeholders: same as the footer
 const socials = [
-  { href: "https://instagram.com/yourhandle", label: "Instagram", icon: FaInstagram },
+  { href: INSTAGRAM_URL, label: "Instagram", icon: FaInstagram },
 ];
 
 export default function MobileMenu({

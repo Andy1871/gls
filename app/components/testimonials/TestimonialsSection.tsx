@@ -29,10 +29,10 @@ export default function TestimonialsSection() {
   }
 
   const arrowClass =
-    "absolute top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-sage-dark shadow-md transition-colors hover:bg-sage";
+    "absolute top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-sage-dark text-beige shadow-md transition-colors hover:bg-sage hover:text-sage-dark";
 
   return (
-    <section className="py-10 mb-10">
+    <section className="py-10 mb-8">
       <div className="px-6 text-center">
         <SectionHeader>See what everyone is saying</SectionHeader>
       </div>

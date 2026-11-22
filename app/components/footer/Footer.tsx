@@ -3,15 +3,14 @@ import Link from "next/link";
 import { FaInstagram } from "react-icons/fa6";
 import Button from "../ui/Button";
 import SectionHeader from "../ui/SectionHeader";
+import { getInstagramPosts, INSTAGRAM_URL } from "@/app/lib/instagram";
 
-const instagramUrl = "https://instagram.com/yourhandle";
-
-// Placeholder images: swap for real Instagram posts
-const posts = [
-  { image: "/images/side-sat-mat-1600.jpg", alt: "Mat Pilates class" },
-  { image: "/about/teaching.jpeg", alt: "Teaching a session" },
-  { image: "/header-ps.jpg", alt: "Studio session" },
-  { image: "/images/front-tophalf-oranges-1600.jpg", alt: "Holding oranges" },
+// Shown only if the Instagram feed can't be reached
+const fallbackPosts = [
+  { id: "1", href: INSTAGRAM_URL, image: "/images/side-sat-mat-1600.jpg", alt: "Mat Pilates class" },
+  { id: "2", href: INSTAGRAM_URL, image: "/about/teaching.jpeg", alt: "Teaching a session" },
+  { id: "3", href: INSTAGRAM_URL, image: "/header-ps.jpg", alt: "Studio session" },
+  { id: "4", href: INSTAGRAM_URL, image: "/images/front-tophalf-oranges-1600.jpg", alt: "Holding oranges" },
 ];
 
 const links = [
@@ -27,7 +26,11 @@ const links = [
 // Fine film-grain texture, as on the page heroes
 const grain = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`;
 
-export default function Footer() {
+export default async function Footer() {
+  // Latest 4 Instagram posts (cached, refreshed about hourly)
+  const latest = await getInstagramPosts(4);
+  const posts = latest.length === 4 ? latest : fallbackPosts;
+
   return (
     <footer className="relative overflow-hidden bg-sage-dark text-beige">
       <div
@@ -52,7 +55,7 @@ export default function Footer() {
               Classes, tips and studio life, shared every week.
             </p>
             <Button
-              href={instagramUrl}
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               variant="white"
@@ -64,10 +67,10 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:order-1 lg:col-span-8">
-            {posts.map((post, i) => (
+            {posts.map((post) => (
               <a
-                key={i}
-                href={instagramUrl}
+                key={post.id}
+                href={post.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative aspect-3/4 overflow-hidden"

@@ -166,12 +166,20 @@ export default function PersonalTrainingPage() {
           What&rsquo;s included in your 12-week package and beyond?
         </SectionHeader>
 
-        <div className="mx-auto max-w-5xl">
-          <ol className="mt-10 grid gap-5 sm:grid-cols-2 md:mt-12 md:gap-6">
+        <div className="mx-auto max-w-5xl lg:max-w-6xl">
+          <ol className="mt-10 grid gap-5 sm:grid-cols-2 md:mt-12 md:gap-6 lg:grid-cols-6">
             {included.map((item, i) => (
               <li
                 key={item.title}
-                className="border border-sage-dark/10 bg-white/50 p-8 md:p-10"
+                className={cn(
+                  "border border-sage-dark/10 bg-white/50 p-8 md:p-10 lg:col-span-2",
+                  // Large screens: 3 per row on a 6-column grid. When the last row
+                  // has only 2 cards (this one + "what happens next"), shift it
+                  // over one column so the pair sits in the middle
+                  (included.length + 1) % 3 === 2 &&
+                    i === included.length - 1 &&
+                    "lg:col-start-2",
+                )}
               >
                 <span
                   aria-hidden
@@ -189,7 +197,7 @@ export default function PersonalTrainingPage() {
             ))}
 
             {/* 08: the bold "what happens next" card */}
-            <li className="relative flex flex-col overflow-hidden bg-sage-dark p-8 text-beige md:p-10">
+            <li className="relative flex flex-col overflow-hidden bg-sage-dark p-8 text-beige md:p-10 lg:col-span-2">
               <GreenTexture />
               <span
                 aria-hidden

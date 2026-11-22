@@ -4,7 +4,7 @@ import SectionHeader from "../ui/SectionHeader";
 import Button from "../ui/Button";
 import { cn } from "@/app/lib/cn";
 
-const instagramUrl = "https://instagram.com/yourhandle";
+import { INSTAGRAM_URL as instagramUrl } from "@/app/lib/instagram-profile";
 
 const posts = [
   { image: "/header-ps.jpg", alt: "Mat Pilates class" },

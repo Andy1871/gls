@@ -1,0 +1,26 @@
+<!doctype html>
+<!--
+  Netlify Forms: Netlify can't see forms rendered by Next.js, so this hidden
+  copy tells it which form and fields to expect at deploy time.
+  EnquiryForm.tsx posts its submissions to this file.
+  Keep the field names here in sync with EnquiryForm.tsx.
+-->
+<html>
+  <body>
+    <form name="enquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="enquiry" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="surname" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <select name="enquiryType">
+        <option value="Pilates">Pilates</option>
+        <option value="Online Coaching">Online Coaching</option>
+        <option value="Pilates & Online Coaching">Pilates &amp; Online Coaching</option>
+        <option value="General Enquiry">General Enquiry</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

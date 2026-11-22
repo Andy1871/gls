@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { useForm } from "react-hook-form";
 import Button from "../ui/Button";
 
@@ -11,6 +11,7 @@ type FormValues = {
   phone: string;
   enquiryType: string;
   message: string;
+  "bot-field": string;
 };
 
 // Options for the "What are you enquiring about?" dropdown
@@ -36,14 +37,41 @@ export default function EnquiryForm({
     formState: { errors, isSubmitting },
   } = useForm<FormValues>();
 
+  const [status, setStatus] = useState<"idle" | "sent" | "error">("idle");
+
+  // Netlify Forms: post to the static copy of this form in public/__forms.html
+  // (Netlify can't receive posts to pages rendered by Next.js)
   async function onSubmit(data: FormValues) {
-    console.log(data);
-    reset();
+    setStatus("idle");
+    try {
+      const res = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ "form-name": "enquiry", ...data }).toString(),
+      });
+      if (!res.ok) throw new Error(`Form submission failed: ${res.status}`);
+      setStatus("sent");
+      reset();
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate className={className}>
+    <form
+      name="enquiry"
+      onSubmit={handleSubmit(onSubmit)}
+      noValidate
+      className={className}
+    >
       {children}
+
+      {/* Honeypot: hidden from people, bots fill it in and Netlify drops the submission */}
+      <p className="hidden" aria-hidden>
+        <label>
+          Don&rsquo;t fill this out: <input tabIndex={-1} autoComplete="off" {...register("bot-field")} />
+        </label>
+      </p>
 
       <div className="flex flex-1 flex-col space-y-6">
         <div className="grid gap-6 sm:grid-cols-2">
@@ -162,10 +190,20 @@ export default function EnquiryForm({
         </label>
       </div>
 
-      <div className="mt-8 flex justify-end">
+      <div className="mt-8 flex flex-col items-end gap-4">
         <Button type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send message"}
         </Button>
+        <p aria-live="polite" className="text-right text-sm">
+          {status === "sent" &&
+            "Thank you, your message has been sent. I’ll be in touch within a couple of days."}
+          {status === "error" && (
+            <span className="text-red-600">
+              Sorry, something went wrong. Please try again, or message me on
+              Instagram.
+            </span>
+          )}
+        </p>
       </div>
     </form>
   );

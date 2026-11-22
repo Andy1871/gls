@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://greenlifepilates.co.uk/*"
+  to = "https://greenlifestudio.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.greenlifepilates.co.uk/*"
+  to = "https://greenlifestudio.co.uk/:splat"
+  status = 301
+  force = true

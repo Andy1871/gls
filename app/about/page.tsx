@@ -30,7 +30,7 @@ export default function AboutPage() {
               </p>
               <p>Then I discovered Reformer Pilates and everything clicked. I trained as an instructor alongside my corporate IT and sales career, then took the plunge, left my 9 to 5 and built Greenlife Studio in my garden. Along the way I rediscovered my love of strength training and qualified as a Level 3 Personal Trainer.</p>
 
-              <p>I’ve had my own struggles with food too, from restriction and bingeing to feeling I had to follow strict rules. Now I enjoy simple, nourishing food without constant tracking, and that balance shapes everything I teach.</p>
+              <p>I’ve had my own struggles with food too, from restriction and binging to feeling I had to follow strict rules. Now I enjoy simple, nourishing food without constant tracking, and that balance shapes everything I teach.</p>
               <p>
                 At Greenlife Studio, I bring together Pilates, strength and Nutrition to help you find what works for you and build habits that last. No quick fixes, no perfection, just a stronger, healthier and more balanced you.
               </p>
